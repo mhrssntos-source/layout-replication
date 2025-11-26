@@ -18,20 +18,20 @@ const suggestions = [
 
 export function AISuggestionsCard() {
   return (
-    <div className="gradient-card rounded-2xl p-8 text-white relative overflow-hidden shadow-lg">
+    <div className="gradient-card rounded-xl p-5 text-white relative overflow-hidden shadow-lg">
       {/* Decorative elements */}
-      <div className="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -mr-32 -mt-32"></div>
-      <div className="absolute bottom-0 left-0 w-48 h-48 bg-white/5 rounded-full -ml-24 -mb-24"></div>
+      <div className="absolute top-0 right-0 w-48 h-48 bg-white/5 rounded-full -mr-24 -mt-24"></div>
+      <div className="absolute bottom-0 left-0 w-32 h-32 bg-white/5 rounded-full -ml-16 -mb-16"></div>
       
       <div className="relative z-10">
-        <div className="flex items-start justify-between mb-6">
-          <div className="flex items-center gap-3">
-            <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center backdrop-blur-sm">
-              <Lightbulb className="w-6 h-6" />
+        <div className="flex items-start justify-between mb-4">
+          <div className="flex items-center gap-2">
+            <div className="w-9 h-9 bg-white/20 rounded-lg flex items-center justify-center backdrop-blur-sm">
+              <Lightbulb className="w-4 h-4" />
             </div>
             <div>
-              <h2 className="text-xl font-bold">Sugestões da IA para Hoje</h2>
-              <p className="text-sm text-white/80 mt-0.5">
+              <h2 className="text-base font-bold">Sugestões da IA para Hoje</h2>
+              <p className="text-xs text-white/80">
                 Baseado na análise do seu perfil e tendências
               </p>
             </div>
@@ -40,20 +40,20 @@ export function AISuggestionsCard() {
           <Button 
             variant="secondary" 
             size="sm"
-            className="bg-white/20 hover:bg-white/30 border-0 text-white backdrop-blur-sm"
+            className="bg-white/20 hover:bg-white/30 border-0 text-white backdrop-blur-sm text-xs h-8"
           >
             Ver Todas
           </Button>
         </div>
 
-        <div className="space-y-3">
+        <div className="space-y-2">
           {suggestions.map((suggestion, index) => (
             <div
               key={index}
-              className="flex items-start gap-3 p-4 bg-white/10 rounded-xl backdrop-blur-sm hover:bg-white/15 transition-colors"
+              className="flex items-start gap-2 p-3 bg-white/10 rounded-lg backdrop-blur-sm hover:bg-white/15 transition-colors"
             >
-              <span className="text-xl flex-shrink-0">{suggestion.icon}</span>
-              <p className="text-sm text-white/95 leading-relaxed">{suggestion.text}</p>
+              <span className="text-base flex-shrink-0">{suggestion.icon}</span>
+              <p className="text-xs text-white/95 leading-relaxed">{suggestion.text}</p>
             </div>
           ))}
         </div>
