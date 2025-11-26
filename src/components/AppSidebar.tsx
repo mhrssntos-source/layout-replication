@@ -6,7 +6,7 @@ const menuItems = [
   { title: "Persona da Ótica", url: "/persona", icon: User },
   { title: "Gerador de Texto", url: "/texto", icon: FileText },
   { title: "Estúdio de Imagem", url: "/imagem", icon: Image },
-  { title: "Análise Instagram", url: "/instagram", icon: Instagram },
+  { title: "Instagram", url: "/instagram", icon: Instagram },
   { title: "Google Meu Negócio", url: "/google", icon: Building2 },
   { title: "Agendador", url: "/agendador", icon: Calendar },
   { title: "Configurações", url: "/config", icon: Settings },
